@@ -1,241 +1,653 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">VIJAY</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
- 
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">VIJAY</span><br> Web Developer</h1>
-
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/vijay-kumar-239199306" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="./assets/Media/Vijya-kumar-resume.pdf" target="_blank" class="home__social-icon"><i class='bx bx-briefcase' ></i></a>
-                    <a href="https://github.com/vkumar36000" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/Media/Work_3.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/Media/Work_3.1.png" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am VIJAY</h2>
-                        <p class="about__text">           
-                            I am an enthusiastic Frontend Developer with six months of internship
-                            experience at DMATICS Technologies. I specialize in developing
-                            responsive and user-friendly web interfaces using modern frontend
-                            technologies. My skills include HTML5, CSS3, JavaScript, React.js, and
-                            Tailwind CSS, Shadcn UI among others. I am committed to delivering quality work
-                            and continuously improving my skills.
-                        </p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">
-                            As a frontend developer, I possess the following professional skills.
-                        </p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-react skills__icon'></i>
-                                <span class="skills__name">REACT</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">75%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-github skills__icon'></i>
-                                <span class="skills__name">Git/GitHub</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">81%</span>
-                            </div>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-bootstrap skills__icon'></i>
-                                <span class="skills__name">Bootstrap/Tailwind</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">68%</span>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    
-                    <div>              
-                        <img src="./assets/Media/Top-16-Frontend--Technologies.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="https://github.com/vkumar36000/Pokedex-Project-" target="_blank" class="work__img">
-                        <img src="assets/Media/images.png" alt="">
-                    </a>
-                    <a href="https://vk-weather.netlify.app/" target="_blank" class="work__img">
-                        <img src="assets/Media/unnamed.png" alt="">
-                    </a>
-                    <a href="https://github.com/vkumar36000/UI-Clones-of-websites" target="_blank" class="work__img">
-                        <img src="assets/Media/amazon.jpg" alt="">
-                    </a>
-                    <a href="https://github.com/vkumar36000/TIC-TAC-TOE" target="_blank" class="work__img">
-                        <img src="assets/Media/tic tac toe.png" alt="">
-                    </a>
-                    <a href="#work" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="#work" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-            
-                <div class="contact__container bd-grid">
-                    <form id="contact-form" class="contact__form">
-                        <input type="text" id="name" placeholder="Name" class="contact__input" required>
-                        <input type="email" id="email" placeholder="Email" class="contact__input" required>
-                        <textarea id="message" cols="30" rows="10" placeholder="Message" class="contact__input" required></textarea>
-                        <button type="submit" class="contact__button button">Send</button>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">VIJAY</p>
-            <div class="footer__social">
-                <a href="#footer" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#footer" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#footer" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijay Kumar - 3D Portfolio</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-sphere"></div>
+            <div class="loader-text">Loading...</div>
+            <div class="loader-progress">
+                <div class="loader-bar"></div>
             </div>
-            <p class="footer__copy">&#169;  All rigths reserved</p>
-        </footer>
+        </div>
+    </div>
 
+    <!-- Cursor -->
+    <div class="cursor">
+        <div class="cursor-inner"></div>
+        <div class="cursor-outer"></div>
+    </div>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">VIJAY</span>
+                <div class="logo-dot"></div>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-section="home">
+                        <span class="nav-text">Home</span>
+                        <span class="nav-indicator"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">
+                        <span class="nav-text">About</span>
+                        <span class="nav-indicator"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">
+                        <span class="nav-text">Skills</span>
+                        <span class="nav-indicator"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">
+                        <span class="nav-text">Projects</span>
+                        <span class="nav-indicator"></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <span class="nav-text">Contact</span>
+                        <span class="nav-indicator"></span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </div>
+            
+            <div class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </div>
+        </div>
+    </nav>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <canvas id="hero-canvas" class="hero-canvas"></canvas>
+            <div class="hero-particles" id="hero-particles"></div>
+            
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-greeting">
+                        <span class="greeting-text">Hello, I'm</span>
+                        <div class="greeting-wave">👋</div>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="title-line">VIJAY</span>
+                        <span class="title-line">KUMAR</span>
+                    </h1>
+                    
+                    <div class="hero-subtitle">
+                        <span class="subtitle-text" data-text="Frontend Developer">Frontend Developer</span>
+                        <span class="subtitle-text" data-text="React Specialist">React Specialist</span>
+                        <span class="subtitle-text" data-text="UI/UX Enthusiast">UI/UX Enthusiast</span>
+                    </div>
+                    
+                    <p class="hero-description">
+                        Crafting digital experiences that blend creativity with functionality. 
+                        Passionate about building responsive, user-centric web applications.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span class="btn-text">View My Work</span>
+                            <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                        </a>
+                        <a href="./assets/Media/Vijya-kumar-resume.pdf" target="_blank" class="btn btn-secondary">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="hero-3d-container" id="hero-3d"></div>
+                    <div class="hero-floating-elements">
+                        <div class="floating-element" data-speed="2">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="floating-element" data-speed="3">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="floating-element" data-speed="1.5">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="floating-element" data-speed="2.5">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/vijay-kumar-239199306" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/vkumar36000" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="./assets/Media/Vijya-kumar-resume.pdf" target="_blank" class="social-link">
+                    <i class="fas fa-file-alt"></i>
+                </a>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-text">Scroll to explore</div>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="about-container">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h3 class="about-subtitle">Frontend Developer & React Specialist</h3>
+                            <p class="about-description">
+                                I'm an enthusiastic Frontend Developer with 6 months of internship experience 
+                                at <strong>DMATICS Technologies</strong>. I specialize in creating responsive, 
+                                user-friendly web interfaces using modern frontend technologies.
+                            </p>
+                            <p class="about-description">
+                                My expertise includes <strong>HTML5, CSS3, JavaScript, React.js, and Tailwind CSS</strong>. 
+                                I'm passionate about delivering quality work and continuously improving my skills 
+                                to stay current with the latest web development trends.
+                            </p>
+                            
+                            <div class="about-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number" data-count="6">0</span>
+                                    <span class="stat-label">Months Experience</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" data-count="10">0</span>
+                                    <span class="stat-label">Projects Completed</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" data-count="8">0</span>
+                                    <span class="stat-label">Technologies</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-image">
+                            <div class="image-container">
+                                <img src="assets/Media/Work_3.1.png" alt="Vijay Kumar" class="about-img">
+                                <div class="image-overlay">
+                                    <div class="overlay-content">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-decoration">
+                                <div class="decoration-element"></div>
+                                <div class="decoration-element"></div>
+                                <div class="decoration-element"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skills-content">
+                        <div class="skills-text">
+                            <h3 class="skills-subtitle">Professional Expertise</h3>
+                            <p class="skills-description">
+                                Here are the technologies and tools I work with to create 
+                                amazing digital experiences.
+                            </p>
+                        </div>
+                        
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4 class="category-title">Frontend</h4>
+                                <div class="skills-list">
+                                    <div class="skill-item" data-skill="95">
+                                        <div class="skill-info">
+                                            <i class="fab fa-html5 skill-icon"></i>
+                                            <span class="skill-name">HTML5</span>
+                                            <span class="skill-percentage">95%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item" data-skill="85">
+                                        <div class="skill-info">
+                                            <i class="fab fa-css3-alt skill-icon"></i>
+                                            <span class="skill-name">CSS3</span>
+                                            <span class="skill-percentage">85%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item" data-skill="75">
+                                        <div class="skill-info">
+                                            <i class="fab fa-js-square skill-icon"></i>
+                                            <span class="skill-name">JavaScript</span>
+                                            <span class="skill-percentage">75%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item" data-skill="70">
+                                        <div class="skill-info">
+                                            <i class="fab fa-react skill-icon"></i>
+                                            <span class="skill-name">React</span>
+                                            <span class="skill-percentage">70%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h4 class="category-title">Tools & Others</h4>
+                                <div class="skills-list">
+                                    <div class="skill-item" data-skill="81">
+                                        <div class="skill-info">
+                                            <i class="fab fa-git-alt skill-icon"></i>
+                                            <span class="skill-name">Git/GitHub</span>
+                                            <span class="skill-percentage">81%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item" data-skill="68">
+                                        <div class="skill-info">
+                                            <i class="fab fa-bootstrap skill-icon"></i>
+                                            <span class="skill-name">Bootstrap/Tailwind</span>
+                                            <span class="skill-percentage">68%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item" data-skill="65">
+                                        <div class="skill-info">
+                                            <i class="fas fa-mobile-alt skill-icon"></i>
+                                            <span class="skill-name">Responsive Design</span>
+                                            <span class="skill-percentage">65%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill-item" data-skill="60">
+                                        <div class="skill-info">
+                                            <i class="fas fa-paint-brush skill-icon"></i>
+                                            <span class="skill-name">UI/UX Design</span>
+                                            <span class="skill-percentage">60%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-visual">
+                        <div class="skills-3d-container" id="skills-3d"></div>
+                        <div class="tech-orbit">
+                            <div class="orbit-ring orbit-1">
+                                <div class="orbit-item"><i class="fab fa-react"></i></div>
+                                <div class="orbit-item"><i class="fab fa-js-square"></i></div>
+                                <div class="orbit-item"><i class="fab fa-html5"></i></div>
+                            </div>
+                            <div class="orbit-ring orbit-2">
+                                <div class="orbit-item"><i class="fab fa-css3-alt"></i></div>
+                                <div class="orbit-item"><i class="fab fa-git-alt"></i></div>
+                                <div class="orbit-item"><i class="fab fa-bootstrap"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="projects-container">
+                    <div class="project-card featured" data-project="1">
+                        <div class="project-image">
+                            <img src="assets/Media/images.png" alt="Pokedex Project">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/vkumar36000/Pokedex-Project-" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Interactive App</div>
+                            <h3 class="project-title">Pokedex Project</h3>
+                            <p class="project-description">
+                                A comprehensive Pokémon database application built with modern web technologies, 
+                                featuring search functionality and detailed Pokémon information.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API Integration</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project="2">
+                        <div class="project-image">
+                            <img src="assets/Media/unnamed.png" alt="Weather App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://vk-weather.netlify.app/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Web Application</div>
+                            <h3 class="project-title">Weather Dashboard</h3>
+                            <p class="project-description">
+                                Real-time weather application with location-based forecasts and 
+                                beautiful UI design for better user experience.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Weather API</span>
+                                <span class="tech-tag">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project="3">
+                        <div class="project-image">
+                            <img src="assets/Media/amazon.jpg" alt="UI Clones">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/vkumar36000/UI-Clones-of-websites" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">UI/UX Clone</div>
+                            <h3 class="project-title">Website UI Clones</h3>
+                            <p class="project-description">
+                                Pixel-perfect recreations of popular website interfaces to 
+                                demonstrate attention to detail and frontend skills.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project="4">
+                        <div class="project-image">
+                            <img src="assets/Media/tic tac toe.png" alt="Tic Tac Toe">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/vkumar36000/TIC-TAC-TOE" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Game Development</div>
+                            <h3 class="project-title">Tic Tac Toe Game</h3>
+                            <p class="project-description">
+                                Interactive game with smooth animations and intelligent AI opponent. 
+                                Features score tracking and multiple difficulty levels.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Game Logic</span>
+                                <span class="tech-tag">Animation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <h3 class="contact-subtitle">Get In Touch</h3>
+                            <p class="contact-description">
+                                I'm always open to discussing new opportunities, creative projects, 
+                                or just having a chat about web development. Let's create something amazing together!
+                            </p>
+                            
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <span class="method-label">Email</span>
+                                        <span class="method-value">vijay@example.com</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <span class="method-label">Phone</span>
+                                        <span class="method-value">+91 xxxxx xxxxx</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <span class="method-label">Location</span>
+                                        <span class="method-value">India</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-social">
+                                <a href="https://www.linkedin.com/in/vijay-kumar-239199306" target="_blank" class="social-link">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/vkumar36000" target="_blank" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="./assets/Media/Vijya-kumar-resume.pdf" target="_blank" class="social-link">
+                                    <i class="fas fa-file-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" class="form-input" required>
+                                <label for="name" class="form-label">Full Name</label>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <label for="email" class="form-label">Email Address</label>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" class="form-input" required>
+                                <label for="subject" class="form-label">Subject</label>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
+                                <label for="message" class="form-label">Message</label>
+                                <div class="form-line"></div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <span class="logo-text">VIJAY</span>
+                        <div class="logo-dot"></div>
+                    </div>
+                    <p class="footer-text">
+                        Frontend Developer passionate about creating beautiful and functional web experiences.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Navigation</h4>
+                        <ul class="footer-list">
+                            <li><a href="#home" class="footer-link">Home</a></li>
+                            <li><a href="#about" class="footer-link">About</a></li>
+                            <li><a href="#skills" class="footer-link">Skills</a></li>
+                            <li><a href="#projects" class="footer-link">Projects</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Connect</h4>
+                        <ul class="footer-list">
+                            <li><a href="https://www.linkedin.com/in/vijay-kumar-239199306" target="_blank" class="footer-link">LinkedIn</a></li>
+                            <li><a href="https://github.com/vkumar36000" target="_blank" class="footer-link">GitHub</a></li>
+                            <li><a href="#contact" class="footer-link">Contact</a></li>
+                            <li><a href="./assets/Media/Vijya-kumar-resume.pdf" target="_blank" class="footer-link">Resume</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copy">
+                    © 2024 Vijay Kumar. All rights reserved. Built with ❤️ and lots of ☕
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/three-scenes.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
